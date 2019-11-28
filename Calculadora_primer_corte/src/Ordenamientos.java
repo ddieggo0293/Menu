@@ -30,30 +30,30 @@ public class Ordenamientos {
 }
     
     public void burbuja(){
-        int tamanio = Integer.parseInt(JOptionPane.showInputDialog("digite el tamaño del arreglo"));
+        int tamanio = Integer.parseInt(JOptionPane.showInputDialog("Digite por favor el tamaño del arreglo"));
         int arregloDatos [] = new int[tamanio];
         int e=1;
                 while(e==1){
                     String opc1 = JOptionPane.showInputDialog("SELECCIONE UNA OPCION\n"+
-                                                               "a. Cargar datos\n"+
-                                                               "b. Mostrar datos\n"+
-                                                               "c. Ordenar\n"+
-                                                               "d. Salir");
+                                                               "A. Cargar datos\n"+
+                                                               "B. Mostrar datos\n"+
+                                                               "C. Ordenar\n"+
+                                                               "D. Salir");
                     
                     switch(opc1){
-                        case "a":
+                        case "A":
                             for(int f=0; f<arregloDatos.length;f++){
                                 arregloDatos[f]=Integer.parseInt(JOptionPane.showInputDialog("ingrese un valor tipo String en la posicion "+ f ));
                             }
                         break;
                         
-                        case "b":
+                        case "B":
                             for(int j=0;j<arregloDatos.length;j++){
                                 JOptionPane.showMessageDialog(null,"el valor en la posicion "+ j + " es "+ arregloDatos[j] );
                             }
                             break;
                             
-                        case "c":
+                        case "C":
                             int i, j, aux;
                             for (i = 0; i < arregloDatos.length - 1; i++) {
                                 for (j = 0; j < arregloDatos.length - i - 1; j++) {
@@ -67,7 +67,7 @@ public class Ordenamientos {
                             JOptionPane.showMessageDialog(null, "DATOS ORDENADOS");
                             break;
                             
-                        case "d":
+                        case "D":
                             JOptionPane.showMessageDialog(null, "SALIENDO");
                             e++;
                             break;
@@ -80,15 +80,15 @@ public class Ordenamientos {
     
     public void shell(){
         int u=1;
-        int tamanio = Integer.parseInt(JOptionPane.showInputDialog("digite el tamaño del arreglo"));
+        int tamanio = Integer.parseInt(JOptionPane.showInputDialog("Digite por favor el tamaño del arreglo"));
         int arregloDatos [] = new int[tamanio];
         int p=1;
                 while(p==1){
                     String opc1 = JOptionPane.showInputDialog("SELECCIONE UNA OPCION\n"+
-                                                               "a. Cargar datos\n"+
-                                                               "b. Mostrar datos\n"+
-                                                               "c. Ordenar\n"+
-                                                               "d. Salir");
+                                                               "A. Cargar datos\n"+
+                                                               "B. Mostrar datos\n"+
+                                                               "C. Ordenar\n"+
+                                                               "D. Salir");
                     
                     switch(opc1){
                         case "a":
@@ -128,9 +128,8 @@ public class Ordenamientos {
                             break;
                             
                         default:
-                            JOptionPane.showMessageDialog(null, "Digite una opcion valida");
+                            JOptionPane.showMessageDialog(null, "Digite por favor una opcion valida");
                     }
                 }
-        
     }
 }
