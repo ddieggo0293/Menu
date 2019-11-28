@@ -65,8 +65,9 @@ public class Operaciones {
     }
     public int multiplicar(){
        return this.getNumero1() * this.getNumero2(); 
-    
+    }
     public double division(){
        return (double) this.getNumero1()/this.getNumero2(); 
     }
+   
 }
