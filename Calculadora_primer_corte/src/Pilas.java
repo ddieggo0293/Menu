@@ -17,8 +17,8 @@ public class Pilas {
             
             switch(opc){
                 case "A":
-                    pila.push(JOptionPane.showInputDialog("ingrese un valor de tipo String para  ingresarlo a la pila"));
-                    JOptionPane.showMessageDialog(null, "dato cargado");
+                    pila.push(JOptionPane.showInputDialog("Ingrese por favor un valor de tipo String para ingresarlo a la pila"));
+                    JOptionPane.showMessageDialog(null, "Dato cargado");
                     break;
                     
                 case "B":
@@ -45,7 +45,7 @@ public class Pilas {
                     break;
                     
                 default:
-                    JOptionPane.showMessageDialog(null, "digite una opcion valida");
+                    JOptionPane.showMessageDialog(null, "Digite por favor una opcion valida");
             }
         }
     }
