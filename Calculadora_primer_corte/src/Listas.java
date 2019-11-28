@@ -15,30 +15,26 @@ public class Listas {
                                                                    "B. Mostrar datos.\n"+
                                                                    "C. Limpiar lista.\n"+
                                                                    "D. Salir.\n");
-            
+            //Indicador de casos
             switch(opc){
                 case "A":
-                    dato = JOptionPane.showInputDialog("ingrese un valor de tipo String para  ingresarlo a la lista");
+                    dato = JOptionPane.showInputDialog("Ingrese un valor de tipo String para ingresarlo a la lista");
                     nombres.add(dato);
-                    JOptionPane.showMessageDialog(null, "dato cargado");
+                    JOptionPane.showMessageDialog(null, "DATO CARGADO");
                     break;
-                    
                 case "B":
                     JOptionPane.showMessageDialog(null, nombres);
                     break;
-                    
                 case "C":
                     nombres.clear();
-                    JOptionPane.showMessageDialog(null, "Lista Vaciada");
+                    JOptionPane.showMessageDialog(null, "LISTA VACIADA");
                     break;
-                    
                 case "D":
                     u=0;
                     JOptionPane.showMessageDialog(null, "SALIENDO");
                     break;
-                    
                 default:
-                    JOptionPane.showMessageDialog(null, "digite una opcion valida");
+                    JOptionPane.showMessageDialog(null, "DIGITE UNA OPCION VALIDA");
             }
         }
     }
